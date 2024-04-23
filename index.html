@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Auto Garage</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+            color: #333; 
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section:after {
+            content: '';
+            display: block;
+            border-bottom: 2px solid #ddd;
+            margin: 20px 0; 
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .car-image {
+            width: 48%; /* Reduce width to fit two images side by side */
+            max-width: 200px; /* Reduce max width for smaller images */
+            height: auto;
+            display: inline-block; /* Make images inline */
+            margin: 10px; /* Add margin for spacing */
+            border: 2px solid #000; /* Add black border */
+        }
+
+        /* New Styles for Enhanced Attractiveness */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #444;
+            color: #fff;
+        }
+
+        .link-to-porsche {
+            display: block;
+            text-align: center;
+            margin-top: 20px
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Pro Auto Garage!</h2>
+        <p>Your one-stop solution for car maintenance and repair.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Engine Diagnostics</td>
+                <td>We diagnose and fix engine-related issues.</td>
+            </tr>
+            <tr>
+                <td>Oil Change</td>
+                <td>Regular oil changes to keep your engine running smoothly.</td>
+            </tr>
+            <tr>
+                <td>Brake Repair</td>
+                <td>Expert brake system inspection and repair services.</td>
+            </tr>
+            <tr>
+                <td>Wheel Alignment</td>
+                <td>Precision wheel alignment for optimal vehicle handling.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img class="car-image" src="service-1.jpg" alt="Service 1">
+        <img class="car-image" src="service-2.jpg" alt="Service 2">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pro Auto Garage. All rights reserved.</p>
+        <div class="link-to-porsche">
+            <a href="https://www.porsche.com" target="_blank">Explore Porsche</a>
+        </div>
+    </footer>
+
+</body>
+</html>
